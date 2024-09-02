@@ -3,11 +3,21 @@ import './index.css';
 
 function Card(props) {
   return (
-    <div>
-      <img src={props.src} width = "200px"  alt="shoes"/>
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
-        <button className='btn btn-error'>Buy Now</button>
+    <div className='border-2 border-slate-300 p-4 rounded-lg'>
+
+      <div className='flex justify-center mt-2 mb-10'>
+      <img className='rounded-lg' src={props.src} width = "300px"  alt="shoes"/>
+      </div>
+      
+      <div className='text-xl'>
+        <h1><b>Rs {props.price}</b></h1>
+        <h2 className='my-3'>{props.title}</h2>
+        <div className='text-slate-400 text-xs'>
+          <p>Saddar Town,Karachi</p>
+          <p>3 Weeks Ago</p>
+        </div>
+      </div>
+
     </div>
   )
 }
