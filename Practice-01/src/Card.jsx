@@ -13,8 +13,8 @@ function Card(props) {
         <h1><b>Rs {props.price}</b></h1>
         <h2 className='my-3'>{props.title}</h2>
         <div className='text-slate-400 text-xs'>
-          <p>Saddar Town,Karachi</p>
-          <p>3 Weeks Ago</p>
+          <p>{props.area}</p>
+          <p>{props.date}</p>
         </div>
       </div>
 
